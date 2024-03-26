@@ -1,0 +1,144 @@
+/* Estilos para la página del testimonio */
+
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo del encabezado con transparencia */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Asegurar que el encabezado esté por encima del contenido */
+}
+
+.content {
+    padding-top: 80px; /* Ajusta el espacio para que el contenido comience debajo del header */
+    padding-bottom: 80px; /* Ajusta el espacio para que el contenido termine antes del footer */
+    position: relative; /* Ajusta la posición del contenido */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: 100px;
+    margin-right: 10px;
+}
+
+.institution-name {
+    margin: 0;
+    font-size: 24px;
+    color: #333; /* Color del texto del nombre de la institución */
+}
+
+body {
+    background-image: linear-gradient(100deg,#0000008c 0%, #0000008c 100%), url(../images/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    height: 100vh; /* Hacer que ocupe toda la altura de la ventana */
+}
+
+.testimonial-container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+.testimonial-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    margin-right: 20px;
+}
+
+.testimonial-info {
+    text-align: left;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+.testimonial-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial-info p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del footer */
+    padding: 20px; /* Ajusta el espaciado interno del footer según sea necesario */
+    text-align: center;
+}
+
+.bottom-button {
+    background-color: #2091F9; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón según sea necesario */
+    border-radius: 5px; /* Ajusta el radio de borde del botón según sea necesario */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    cursor: pointer;
+}
+
+.bottom-button:hover {
+    background-color: #1563c0; /* Color de fondo del botón al pasar el cursor */
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+
+    .header {
+        position: relative; /* Cambia la posición a relativa para que no sea fijo en dispositivos móviles */
+    }
+
+    .footer {
+        position: relative; /* Cambia la posición a relativa para que no sea fijo en dispositivos móviles */
+        margin-top: 20px; /* Añade un margen superior para separar el footer del contenido */
+    }
+
+    .content {
+        padding-top: 120px; /* Ajusta el espacio para que el contenido comience debajo del header */
+        padding-bottom: 120px; /* Ajusta el espacio para que el contenido termine antes del footer */
+    }
+
+    .testimonial-container {
+        flex-direction: column; /* Cambia la dirección del contenedor a columna */
+        align-items: center; /* Centra el contenido verticalmente */
+    }
+
+    .testimonial-image {
+        margin-right: 0; /* Elimina el margen derecho para centrar la imagen */
+        margin-bottom: 20px; /* Añade un margen inferior para separar la imagen del contenido */
+    }
+
+    .testimonial-info {
+        text-align: center; /* Centra el texto */
+    }
+}
